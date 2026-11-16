@@ -7,6 +7,19 @@
     <meta name="description" content="Cursos profissionalizantes 100% online com certificado de conclusão: Assistente Financeiro, RH, Contábil, Excel, Word, Recepcionista, Auxiliar de Farmácia, Cuidador de Idosos e muito mais.">
     <meta name="theme-color" content="#0B0D12">
 
+    <!-- =========================================================
+         CONFIGURAÇÃO DE ANÚNCIOS — preencha só estes campos
+         ========================================================= -->
+    <script>
+      window.ADS_CONFIG = {
+        GOOGLE_ADS_ID: 'AW-18546745052',
+        // Rótulo da conversão "Clique WhatsApp" (Google Ads > Metas > Conversões)
+        GOOGLE_ADS_LABEL_WHATSAPP: '',
+        // ID do Pixel / conjunto de dados da Meta (Gerenciador de Eventos)
+        META_PIXEL_ID: '1990491815242802'
+      };
+    </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18546745052"></script>
     <script>
@@ -14,6 +27,19 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-18546745052');
+    </script>
+
+    <!-- Meta Pixel (só carrega se META_PIXEL_ID estiver preenchido) -->
+    <script>
+      if (window.ADS_CONFIG.META_PIXEL_ID) {
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', window.ADS_CONFIG.META_PIXEL_ID);
+        fbq('track', 'PageView');
+      }
     </script>
 
     <!-- Tailwind CSS -->
@@ -88,7 +114,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-center">
             <p class="flex items-center gap-2 text-center">
                 <span class="relative flex h-2 w-2 shrink-0"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span></span>
-                <span><strong class="text-white font-semibold">Matrículas abertas</strong> · Todos os cursos com certificado de conclusão</span>
+                <span><strong class="text-white font-semibold">Matrículas abertas</strong> · Qualquer curso por R$ 35,90 com certificado incluso</span>
             </p>
         </div>
     </div>
@@ -160,8 +186,8 @@
                             <dd class="font-display text-2xl font-extrabold text-white">100h</dd>
                         </div>
                         <div class="border-l-2 border-brand-orange pl-3">
-                            <dt class="text-xs text-gray-400">Modalidade</dt>
-                            <dd class="font-display text-2xl font-extrabold text-white">Online</dd>
+                            <dt class="text-xs text-gray-400">Investimento</dt>
+                            <dd class="font-display text-2xl font-extrabold text-white">R$ 35,90</dd>
                         </div>
                         <div class="border-l-2 border-brand-orange pl-3">
                             <dt class="text-xs text-gray-400">Ao concluir</dt>
@@ -259,7 +285,7 @@
                 <li class="relative bg-brand-card border border-brand-border rounded-2xl p-6">
                     <span class="font-display text-4xl font-black text-brand-orange/25">02</span>
                     <h3 class="font-semibold text-white mt-3">Faça sua matrícula</h3>
-                    <p class="text-sm text-gray-400 mt-1.5 leading-relaxed">Fale com nossa equipe pelo WhatsApp e tire todas as suas dúvidas.</p>
+                    <p class="text-sm text-gray-400 mt-1.5 leading-relaxed">Fale com a equipe pelo WhatsApp e pague R$ 35,90 por Pix. Certificado incluso.</p>
                 </li>
                 <li class="relative bg-brand-card border border-brand-border rounded-2xl p-6">
                     <span class="font-display text-4xl font-black text-brand-orange/25">03</span>
@@ -329,12 +355,16 @@
             </div>
             <div class="space-y-3">
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Quanto custa o curso?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
+                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Todos os cursos custam R$ 35,90, pagamento único por Pix. O valor já inclui a apostila completa, a avaliação final e o certificado de conclusão. Não há mensalidade nem taxa extra.</p>
+                </details>
+                <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Os cursos são presenciais ou online?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
                     <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Todos os cursos são 100% online e autoinstrucionais. Você estuda pelo celular, tablet ou computador, no horário que preferir.</p>
                 </details>
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Recebo certificado ao final?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
-                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Sim. Ao concluir o curso você recebe o certificado de conclusão com o nome do curso e a carga horária.</p>
+                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Sim, e ele já está incluso no valor do curso. Ao concluir e ser aprovado na avaliação final, você recebe o certificado de conclusão com o nome do curso e a carga horária.</p>
                 </details>
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Qual é a carga horária dos cursos?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
@@ -342,7 +372,7 @@
                 </details>
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Como faço minha matrícula?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
-                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Escolha o curso no catálogo e clique em “Matricular pelo WhatsApp”. Nossa equipe envia todas as informações, valores e condições.</p>
+                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Escolha o curso no catálogo e clique em “Matricular pelo WhatsApp”. Nossa equipe confirma o curso, envia a chave Pix de R$ 35,90 e, após o pagamento, libera a apostila.</p>
                 </details>
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Preciso ter experiência na área?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
@@ -389,6 +419,7 @@
                     <li><a href="#como-funciona" class="hover:text-white transition">Como funciona</a></li>
                     <li><a href="#certificado" class="hover:text-white transition">Certificado</a></li>
                     <li><a href="#duvidas" class="hover:text-white transition">Perguntas frequentes</a></li>
+                    <li><a href="politica-de-privacidade.html" class="hover:text-white transition">Política de privacidade</a></li>
                 </ul>
             </div>
             <div>
@@ -400,7 +431,7 @@
             </div>
         </div>
         <div class="border-t border-brand-border">
-            <p class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-gray-500">&copy; <span id="ano">2026</span> Emprego Em Foco Cursos. Todos os direitos reservados.</p>
+            <p class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 text-xs text-gray-500">&copy; <span id="ano">2026</span> Emprego Em Foco Cursos. Todos os direitos reservados. · <a href="politica-de-privacidade.html" class="underline hover:text-white">Política de Privacidade</a></p>
         </div>
     </footer>
 
@@ -427,6 +458,7 @@
 
     <script>
         const WHATSAPP_NUMBER = "5562992896710";
+        const PRECO = "R$ 35,90";
 
         const CATEGORIAS = [
             { id: "admin", nome: "Administração", icone: "fa-briefcase" },
@@ -588,7 +620,7 @@
         ];
 
         const nomeCategoria = id => (CATEGORIAS.find(c => c.id === id) || {}).nome || "";
-        const linkWhats = curso => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Vim pelo site da Emprego Em Foco e tenho interesse no curso de ${curso.titulo}. Pode me passar mais informações?`)}`;
+        const linkWhats = curso => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá! Vim pelo site da Emprego Em Foco e quero me matricular no curso de ${curso.titulo} (${PRECO} com certificado incluso).`)}`;
 
         let categoriaAtiva = "todos";
 
@@ -647,9 +679,13 @@
                             <span><i class="fa-solid fa-wifi text-brand-orange mr-1"></i>Online</span>
                             <span><i class="fa-solid fa-award text-brand-orange mr-1"></i>Certificado</span>
                         </div>
-                        <div class="grid grid-cols-2 gap-2 mt-auto pt-5">
+                        <div class="mt-auto pt-5 flex items-baseline justify-between">
+                            <span class="font-display text-2xl font-extrabold text-white">${PRECO}</span>
+                            <span class="text-xs text-gray-400">Pix · certificado incluso</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-3">
                             <button type="button" data-open="${idx}" class="border border-brand-border hover:border-gray-500 text-gray-200 hover:text-white font-semibold text-sm py-2.5 rounded-lg transition">Ver detalhes</button>
-                            <a href="${linkWhats(curso)}" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition"><i class="fa-brands fa-whatsapp"></i> Matricular</a>
+                            <a href="${linkWhats(curso)}" data-curso="${curso.titulo}" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition"><i class="fa-brands fa-whatsapp"></i> Matricular</a>
                         </div>
                     </div>
                 </article>`;
@@ -703,7 +739,12 @@
                         <div class="bg-brand-dark border border-brand-border rounded-lg p-3 text-center"><i class="fa-solid fa-award text-brand-amber"></i><p class="text-xs text-gray-300 mt-1">Certificado</p></div>
                     </div>
 
-                    <a href="${linkWhats(curso)}" target="_blank" rel="noopener" class="mt-6 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 transition">
+                    <div class="mt-6 flex items-baseline justify-between border-t border-brand-border pt-5">
+                        <span class="font-display text-3xl font-extrabold text-white">${PRECO}</span>
+                        <span class="text-sm text-gray-400">Pagamento único por Pix · certificado incluso</span>
+                    </div>
+
+                    <a href="${linkWhats(curso)}" data-curso="${curso.titulo}" target="_blank" rel="noopener" class="mt-4 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-3.5 rounded-xl flex items-center justify-center gap-2 transition">
                         <i class="fa-brands fa-whatsapp text-xl"></i> Matricular pelo WhatsApp
                     </a>
                 </div>`;
@@ -724,12 +765,74 @@
         modal.addEventListener('click', e => { if (e.target.closest('[data-close]')) fecharModal(); });
         document.addEventListener('keydown', e => { if (e.key === 'Escape' && !modal.classList.contains('hidden')) fecharModal(); });
 
+        // ===== Rastreamento de anúncios =====
+        // Guarda a origem (G = Google, M = Meta, S = site/orgânico), coloca um
+        // código curto no fim da mensagem do WhatsApp e dispara as conversões.
+        function lerOrigem() {
+            const p = new URLSearchParams(location.search);
+            let origem = null;
+            try { origem = JSON.parse(sessionStorage.getItem('ef_origem') || 'null'); } catch (e) {}
+            const temDados = p.get('gclid') || p.get('gbraid') || p.get('wbraid') || p.get('fbclid') || p.get('utm_source');
+            if (temDados || !origem) {
+                const fonte = (p.get('utm_source') || '').toLowerCase();
+                let canal = 'S';
+                if (p.get('gclid') || p.get('gbraid') || p.get('wbraid') || fonte.includes('google')) canal = 'G';
+                else if (p.get('fbclid') || /facebook|instagram|meta|\bfb\b|\big\b/.test(fonte)) canal = 'M';
+                const campanha = (p.get('utm_campaign') || p.get('utm_content') || '')
+                    .toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+                    .replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 20);
+                origem = { canal, campanha };
+                try { sessionStorage.setItem('ef_origem', JSON.stringify(origem)); } catch (e) {}
+            }
+            return origem;
+        }
+        const ORIGEM = lerOrigem();
+        const CODIGO_ORIGEM = ORIGEM.canal + (ORIGEM.campanha ? '-' + ORIGEM.campanha : '');
+
+        function registrarCliqueWhatsApp(curso) {
+            const cfg = window.ADS_CONFIG || {};
+            try {
+                if (typeof gtag === 'function') {
+                    gtag('event', 'clique_whatsapp', { curso: curso || 'geral', origem: CODIGO_ORIGEM });
+                    if (cfg.GOOGLE_ADS_LABEL_WHATSAPP) {
+                        gtag('event', 'conversion', { send_to: cfg.GOOGLE_ADS_ID + '/' + cfg.GOOGLE_ADS_LABEL_WHATSAPP });
+                    }
+                }
+                if (typeof fbq === 'function') fbq('track', 'Contact', { content_name: curso || 'geral' });
+            } catch (e) {}
+        }
+
+        document.addEventListener('click', (ev) => {
+            const a = ev.target.closest('a[href*="wa.me/"]');
+            if (!a) return;
+            try {
+                const url = new URL(a.href);
+                const texto = url.searchParams.get('text') || 'Olá! Vim pelo site da Emprego Em Foco.';
+                if (!texto.includes('Cód:')) {
+                    a.href = url.origin + url.pathname + '?text=' + encodeURIComponent(texto + ' (Cód: ' + CODIGO_ORIGEM + ')');
+                }
+            } catch (e) {}
+            registrarCliqueWhatsApp(a.dataset.curso);
+        }, true);
+
+        // Link direto para um curso (use nos anúncios): ?curso=cuidador
+        function aplicarCursoDaUrl() {
+            const termo = new URLSearchParams(location.search).get('curso');
+            if (!termo) return;
+            const busca = termo.replace(/-/g, ' ');
+            document.getElementById('searchInput').value = busca;
+            const porTitulo = cursos.filter(c => normalizar(c.titulo).includes(normalizar(busca)));
+            if (porTitulo.length) renderizarCursos(porTitulo); else aplicarFiltros();
+            document.getElementById('cursos').scrollIntoView({ behavior: 'smooth' });
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('statCursos').textContent = cursos.length;
             document.getElementById('ano').textContent = new Date().getFullYear();
             document.getElementById('searchInput').addEventListener('input', aplicarFiltros);
             renderizarChips();
             aplicarFiltros();
+            aplicarCursoDaUrl();
         });
     </script>
 </body>
