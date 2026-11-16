@@ -115,7 +115,7 @@
         <div class="max-w-7xl mx-auto flex items-center justify-center">
             <p class="flex items-center gap-2 text-center">
                 <span class="relative flex h-2 w-2 shrink-0"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-400"></span></span>
-                <span><strong class="text-white font-semibold">Matrículas abertas</strong> · Qualquer curso por R$ 35,90 com certificado incluso</span>
+                <span><strong class="text-white font-semibold">Matrículas abertas</strong> · Qualquer curso por R$ 35,90 com certificado incluso + Kit Primeiro Emprego de bônus · Garantia de 7 dias</span>
             </p>
         </div>
     </div>
@@ -358,6 +358,14 @@
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Quanto custa o curso?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
                     <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Todos os cursos custam R$ 35,90, pagamento único por Pix. O valor já inclui a apostila completa, a avaliação final e o certificado de conclusão. Não há mensalidade nem taxa extra.</p>
+                </details>
+                <details class="group bg-brand-card border border-brand-border rounded-xl">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">O que é o Kit Primeiro Emprego?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
+                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">É um bônus que todo aluno recebe junto com o curso: um modelo de currículo pronto para editar (feito para quem ainda não tem experiência), um exemplo preenchido, um guia de entrevista com 12 perguntas e como responder e checklists para o dia da entrevista e para a contratação.</p>
+                </details>
+                <details class="group bg-brand-card border border-brand-border rounded-xl">
+                    <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">E se eu não gostar do curso?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
+                    <p class="px-5 pb-5 -mt-1 text-sm text-gray-400 leading-relaxed">Você tem garantia de 7 dias. Se não gostar, é só pedir pelo WhatsApp dentro desse prazo que devolvemos o valor do Pix.</p>
                 </details>
                 <details class="group bg-brand-card border border-brand-border rounded-xl">
                     <summary class="flex items-center justify-between gap-4 cursor-pointer list-none p-5 font-semibold text-white">Os cursos são presenciais ou online?<i class="faq-icon fa-solid fa-plus text-brand-amber transition-transform"></i></summary>
@@ -684,6 +692,7 @@
                             <span class="font-display text-2xl font-extrabold text-white">${PRECO}</span>
                             <span class="text-xs text-gray-400">Pix · certificado incluso</span>
                         </div>
+                        <p class="text-xs text-emerald-400 mt-1"><i class="fa-solid fa-gift mr-1"></i>Bônus: Kit Primeiro Emprego · Garantia de 7 dias</p>
                         <div class="grid grid-cols-2 gap-2 pt-3">
                             <button type="button" data-open="${idx}" class="border border-brand-border hover:border-gray-500 text-gray-200 hover:text-white font-semibold text-sm py-2.5 rounded-lg transition">Ver detalhes</button>
                             <a href="${linkWhats(curso)}" data-curso="${curso.titulo}" target="_blank" rel="noopener" class="bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm py-2.5 rounded-lg flex items-center justify-center gap-1.5 transition"><i class="fa-brands fa-whatsapp"></i> Matricular</a>
@@ -740,7 +749,13 @@
                         <div class="bg-brand-dark border border-brand-border rounded-lg p-3 text-center"><i class="fa-solid fa-award text-brand-amber"></i><p class="text-xs text-gray-300 mt-1">Certificado</p></div>
                     </div>
 
-                    <div class="mt-6 flex items-baseline justify-between border-t border-brand-border pt-5">
+                    <div class="mt-6 bg-emerald-500/10 border border-emerald-500/30 rounded-xl p-4 text-sm text-gray-200">
+                        <p class="font-semibold text-emerald-400 mb-1.5"><i class="fa-solid fa-gift mr-1.5"></i>Bônus para alunos: Kit Primeiro Emprego</p>
+                        <p>Modelo de currículo pronto para editar + guia com 12 perguntas de entrevista e como responder.</p>
+                        <p class="mt-2 text-gray-400"><i class="fa-solid fa-shield-halved mr-1.5 text-emerald-400"></i>Garantia de 7 dias: se não gostar, devolvemos o seu Pix.</p>
+                    </div>
+
+                    <div class="mt-5 flex items-baseline justify-between border-t border-brand-border pt-5">
                         <span class="font-display text-3xl font-extrabold text-white">${PRECO}</span>
                         <span class="text-sm text-gray-400">Pagamento único por Pix · certificado incluso</span>
                     </div>
